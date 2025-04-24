@@ -1,0 +1,47 @@
+{
+  "name": "ensured-navigation",
+  "version": "1.0.5",
+  "description": "Ensures route changes in Next.js succeed consistently by retrying navigation during async or render timing issues.",
+  "main": "dist/EnsuredNavigation.js",
+  "types": "dist/EnsuredNavigation.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "module": "dist/EnsuredNavigation.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/EnsuredNavigation.mjs",
+      "require": "./dist/EnsuredNavigation.js"
+    },
+    "./types": "./dist/EnsuredNavigation.d.ts",
+    "./mjs": "./dist/EnsuredNavigation.mjs",
+    "./js": "./dist/EnsuredNavigation.js",
+    "./mts": "./dist/EnsuredNavigation.mts"
+  },
+  "keywords": [
+    "nextjs",
+    "navigation",
+    "redirect",
+    "component",
+    "async"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "Song Nuri",
+  "license": "MIT",
+  "peerDependencies": {
+    "next": "^13.4.0 || ^14.0.0 || ^15.0.0",
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0 || ^19.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
